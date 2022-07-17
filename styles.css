@@ -1,0 +1,192 @@
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+
+a:hover{
+ background-color: #FF7A59;       
+}
+
+@font-face{
+    font-family: 'Gutcruncher';
+    src: url(images/Gutcruncher.otf);
+}
+h1{
+    font-family: 'Gutcruncher';
+    font-size: x-large;
+}
+.choix_tirage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.block_cartes {
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(142, 142, 142);
+    padding: 120px 10px 120px 10px;
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    width: 250px;
+    height: 330px;
+}
+
+.imagecarte {
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.imagecarte2 img{
+    border-radius: 10px;
+}
+
+.section_tirage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carte_bonus{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: #898989;
+    width: 90%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.liens_utiles{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.liens_utiles a {
+    margin: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.cartelien{
+    margin: 10px;
+}
+
+.logo_lien{
+    width: 100px;
+    height: 100px;
+}
+
+/*TIRAGES*/
+
+#images img { /*taille resultat*/
+    width: 400px;
+    height: 600px; 
+    position: relative;
+    transform: translateY(-200px);
+
+}
+
+.nav_tirage {
+    margin: 0;
+    height: 50px;
+}
+
+.lien_tirage p {
+margin: 0;
+}
+
+.lien_tirage {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 50px 20px 25px 20px;
+}
+
+
+@keyframes opacity {
+    100% {
+            opacity: 0;
+    }
+    0% {
+            opacity: 1;
+    }
+}
+
+.loader {
+    margin: auto;
+    border: 20px solid #EAF0F6;
+    border-radius: 50%;
+    border-top: 20px solid #FF7A59;
+    width: 200px;
+    height: 200px;
+    animation: spinner 2s linear infinite;
+}
+
+@keyframes spinner {
+    0% { transform: rotate(0deg); 
+    }
+    100% { transform: rotate(360deg); 
+    }
+}
+
+.cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: opacity 5s ease-out;
+    transform: translateY(+100px);
+}
+
+
+
+
+@media only screen and (max-width:609px){
+    img {
+        width: 100px;
+        height: 135px;
+    }
+    .logo_lien{
+        width: 50px;
+        height: 50px;
+    
+    }
+    h1{
+        font-size: 75%;
+    }
+}
+
